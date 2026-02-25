@@ -514,13 +514,78 @@
       ['Dashboard','Charts'],['E-commerce','UX'],['App','Mobile','UX'],
       ['Auth','Web'],['Landing','CSS'],['Components','Design'],['Portfolio','JS']
     ];
-    const projects = Array.from({length:10},(_,i)=>({
-      icon: icons[i],
-      name: `Proyecto Web ${String(i+1).padStart(2,'0')}`,
-      desc: 'Descripción del proyecto. Reemplaza este texto con la info real de tu app.',
-      link: `https://tu-usuario.github.io/proyecto-${String(i+1).padStart(2,'0')}`,
-      tags: allTags[i]
-    }));
+const projects = [
+  { 
+    icon: '🦷', 
+    name: 'Dental Care', 
+    desc: 'Prototipo de landing page para servicios odontológicos con enfoque en estética dental y confianza.', 
+    link: 'https://jeanfa0.github.io/dental-landing-test/', 
+    tags: ['Salud', 'UI'] 
+  },
+  { 
+    icon: '🌿', 
+    name: 'Tingo María Tours', 
+    desc: 'Guía turística de la selva peruana. (Proyecto actualmente inconcluso y en fase de desarrollo).', 
+    link: 'https://jeanfa0.github.io/campus_shop/', 
+    tags: ['Turismo', 'WIP'] 
+  },
+  { 
+    icon: '🏋️', 
+    name: 'IronForge Studio', 
+    desc: 'Prototipo de gimnasio de alto rendimiento con planes de entrenamiento y nutrición personalizada.', 
+    link: 'https://jeanfa0.github.io/proyecto2/', 
+    tags: ['Fitness', 'Elite'] 
+  },
+  { 
+    icon: '🌐', 
+    name: 'Nexus Summit 2026', 
+    desc: 'Concepto de landing page para una conferencia tecnológica internacional sobre IA y Web3.', 
+    link: 'https://jeanfa0.github.io/proyecto3/', 
+    tags: ['Tech', 'Events'] 
+  },
+  { 
+    icon: '🍷', 
+    name: 'Sabor & Brasa', 
+    desc: 'Maqueta para restaurante de alta cocina de autor con sistema de reservas y carta gourmet.', 
+    link: 'https://jeanfa0.github.io/proyecto4/', 
+    tags: ['Gourmet', 'Chef'] 
+  },
+  { 
+    icon: '🛡️', 
+    name: 'Vortex Cloud', 
+    desc: 'Prototipo de plataforma SaaS para infraestructura cloud y ciberseguridad avanzada.', 
+    link: 'https://jeanfa0.github.io/proyecto5/', 
+    tags: ['SaaS', 'Cloud'] 
+  },
+  { 
+    icon: '🏎️', 
+    name: 'Apex Auto Detail', 
+    desc: 'Maqueta de centro especializado en estética automotriz y mecánica de precisión.', 
+    link: 'https://jeanfa0.github.io/proyecto6/', 
+    tags: ['Autos', 'Detailing'] 
+  },
+  { 
+    icon: '⚖️', 
+    name: 'LexVanguard', 
+    desc: 'Concepto de sitio corporativo para un estudio jurídico especializado en derecho corporativo.', 
+    link: 'https://jeanfa0.github.io/proyecto7/', 
+    tags: ['Legal', 'Derecho'] 
+  },
+  { 
+    icon: '⚡', 
+    name: 'Fluxo AI', 
+    desc: 'Prototipo de automatización de flujos de trabajo impulsado por Inteligencia Artificial.', 
+    link: 'https://jeanfa0.github.io/proyecto8/', 
+    tags: ['AI', 'Automation'] 
+  },
+  { 
+    icon: '🏥', 
+    name: 'VidaEnCasa', 
+    desc: 'Portal de bienestar con recursos de bioseguridad, salud familiar y educación a distancia.', 
+    link: 'https://jeanfa0.github.io/pandemia/', 
+    tags: ['Salud', 'Educación'] 
+  },
+];
 
     const grid = document.getElementById('projects-grid');
     projects.forEach(p => {
